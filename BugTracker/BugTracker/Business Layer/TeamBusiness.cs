@@ -18,9 +18,13 @@ namespace BugTracker.Business_Layer
 
         }
 
-        public bool createTeam(Team t)
+        public int createTeam(Team t)
         {
             return tD.createTeam(t);
+        }
+        public void addMemberToTeam(int team_id, int user_id)
+        {
+             tD.addMemberToTeam(team_id, user_id);
         }
     }
 }
