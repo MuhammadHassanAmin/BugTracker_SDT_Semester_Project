@@ -63,14 +63,16 @@ namespace BugTracker.Data_Layer
         }
 
 
-        public DataTable getTeamMembers(int tID)
+        public DataTable getTeamMembers(int tID, int count)
         {
-            dbCon.SqlQuery("select * from users where id = (select userID_FK from user_team_junc where teamID_FK = tID)");
+            dbCon.SqlQuery("select * from users where id = (select userID_FK from user_team_junc where teamID_FK = @teamID_FK AND id = @count)");
+            dbCon.cmd.Parameters.AddWithValue("@teamID_FK", tID);
+            dbCon.cmd.Parameters.AddWithValue("@count", count);
+
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(dbCon.cmd);
             da.Fill(dt);
             return dt;
-
         }
     }
 }

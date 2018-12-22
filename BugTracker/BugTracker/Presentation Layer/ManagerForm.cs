@@ -251,13 +251,24 @@ namespace BugTracker.Presentation_Layer
 
             int teamID = comboBox4.SelectedIndex;
             teamID = teamID + 1;
+            int count = 1;
 
-            dt = tB.getTeamMembers(teamID);
-            foreach (DataRow item in dt.Rows)
+            dt = tB.getTeamMembers(teamID, count);
+            while (count < 5)
             {
-                int n = dataGridView4.Rows.Add();
-                dataGridView4.Rows[n].Cells["Column1"].Value = item["name"].ToString();
-                dataGridView4.Rows[n].Cells["Column2"].Value = item["id"].ToString();
+                foreach (DataRow item in dt.Rows)
+                {
+                    if (item == null)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        int n = dataGridView4.Rows.Add();
+                        dataGridView4.Rows[n].Cells["dataGridViewTextBoxColumn3"].Value = item["name"].ToString();
+                    }
+                }
+                count++;
             }
             dataGridView4.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }

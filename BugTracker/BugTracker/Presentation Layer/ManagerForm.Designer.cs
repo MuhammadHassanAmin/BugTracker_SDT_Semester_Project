@@ -46,10 +46,12 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.button7 = new System.Windows.Forms.Button();
             this.label52 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button6 = new System.Windows.Forms.Button();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
@@ -57,6 +59,7 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelEditTeam = new System.Windows.Forms.Panel();
+            this.btnSelectTeam = new System.Windows.Forms.Button();
             this.DGVSelectedMemebers = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,9 +93,6 @@
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.panelCreateTeam = new System.Windows.Forms.Panel();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSelectTeam = new System.Windows.Forms.Button();
             this.panel9.SuspendLayout();
             this.panelCreateProject.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -307,6 +307,12 @@
             this.dataGridView4.Size = new System.Drawing.Size(228, 169);
             this.dataGridView4.TabIndex = 8;
             // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Names";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
@@ -348,6 +354,12 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(253, 169);
             this.dataGridView3.TabIndex = 9;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Names";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // button6
             // 
@@ -426,6 +438,16 @@
             this.panelEditTeam.Size = new System.Drawing.Size(801, 478);
             this.panelEditTeam.TabIndex = 38;
             // 
+            // btnSelectTeam
+            // 
+            this.btnSelectTeam.Location = new System.Drawing.Point(531, 79);
+            this.btnSelectTeam.Name = "btnSelectTeam";
+            this.btnSelectTeam.Size = new System.Drawing.Size(106, 23);
+            this.btnSelectTeam.TabIndex = 14;
+            this.btnSelectTeam.Text = "Select";
+            this.btnSelectTeam.UseVisualStyleBackColor = true;
+            this.btnSelectTeam.Click += new System.EventHandler(this.btnSelectTeam_Click);
+            // 
             // DGVSelectedMemebers
             // 
             this.DGVSelectedMemebers.AllowUserToAddRows = false;
@@ -445,11 +467,13 @@
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn1.HeaderText = "Names";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "id";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             this.Column3.Visible = false;
             // 
             // panel1
@@ -763,28 +787,6 @@
             this.panelCreateTeam.Size = new System.Drawing.Size(798, 478);
             this.panelCreateTeam.TabIndex = 37;
             this.panelCreateTeam.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCreateTeam_Paint);
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Names";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Names";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // btnSelectTeam
-            // 
-            this.btnSelectTeam.Location = new System.Drawing.Point(531, 79);
-            this.btnSelectTeam.Name = "btnSelectTeam";
-            this.btnSelectTeam.Size = new System.Drawing.Size(106, 23);
-            this.btnSelectTeam.TabIndex = 14;
-            this.btnSelectTeam.Text = "Select";
-            this.btnSelectTeam.UseVisualStyleBackColor = true;
-            this.btnSelectTeam.Click += new System.EventHandler(this.btnSelectTeam_Click);
             // 
             // ManagerForm
             // 

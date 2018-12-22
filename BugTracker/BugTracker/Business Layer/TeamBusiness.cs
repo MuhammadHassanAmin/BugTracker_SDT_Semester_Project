@@ -23,5 +23,16 @@ namespace BugTracker.Business_Layer
         {
             return tD.createTeam(t);
         }
+
+        
+            public DataTable getTeamMembers(int tID, int count)
+        {
+            return tD.getTeamMembers(tID, count);
+        }
+
+        public void addMemberToTeam(int team_id, int user_id)
+        {
+            tD.addMemberToTeam(team_id, user_id);
+        }
     }
 }
