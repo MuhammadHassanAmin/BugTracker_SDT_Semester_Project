@@ -441,7 +441,7 @@
             this.Column3});
             this.DGVSelectedMemebers.Location = new System.Drawing.Point(443, 198);
             this.DGVSelectedMemebers.Name = "DGVSelectedMemebers";
-            this.DGVSelectedMemebers.Size = new System.Drawing.Size(148, 169);
+            this.DGVSelectedMemebers.Size = new System.Drawing.Size(216, 169);
             this.DGVSelectedMemebers.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
