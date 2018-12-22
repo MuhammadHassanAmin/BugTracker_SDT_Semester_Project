@@ -32,3 +32,6 @@ D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.ManagerFor
 D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.TesterForm.resources
 D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Properties.Resources.resources
 D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.csproj.GenerateResource.Cache
+E:\projects\new bug tracker repo\BugTracker\BugTracker\bin\Debug\BugTracker.exe.config
+E:\projects\new bug tracker repo\BugTracker\BugTracker\obj\Debug\BugTracker.exe
+E:\projects\new bug tracker repo\BugTracker\BugTracker\obj\Debug\BugTracker.pdb
