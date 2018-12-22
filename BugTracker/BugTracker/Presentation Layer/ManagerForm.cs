@@ -142,6 +142,7 @@ namespace BugTracker.Presentation_Layer
                 {
                     int uid = Convert.ToInt32(member.Cells[1].Value.ToString());
                     bTeam.addMemberToTeam(pTeam.id, uid);
+                    test
                 }
                 MessageBox.Show("Team Created");
             }
