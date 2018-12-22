@@ -56,8 +56,12 @@
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.DGVselectmembers = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelEditTeam = new System.Windows.Forms.Panel();
             this.DGVSelectedMemebers = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnFeed = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -88,10 +92,6 @@
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.panelCreateTeam = new System.Windows.Forms.Panel();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel9.SuspendLayout();
             this.panelCreateProject.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -189,7 +189,7 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label44.Location = new System.Drawing.Point(223, 175);
+            this.label44.Location = new System.Drawing.Point(158, 177);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(131, 20);
             this.label44.TabIndex = 10;
@@ -403,6 +403,20 @@
             this.DGVselectmembers.TabIndex = 13;
             this.DGVselectmembers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVselectmembers_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "Names";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "id";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Visible = false;
+            // 
             // panelEditTeam
             // 
             this.panelEditTeam.Controls.Add(this.label5);
@@ -429,6 +443,18 @@
             this.DGVSelectedMemebers.Name = "DGVSelectedMemebers";
             this.DGVSelectedMemebers.Size = new System.Drawing.Size(148, 169);
             this.DGVSelectedMemebers.TabIndex = 9;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Names";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "id";
+            this.Column3.Name = "Column3";
+            this.Column3.Visible = false;
             // 
             // panel1
             // 
@@ -741,32 +767,6 @@
             this.panelCreateTeam.Size = new System.Drawing.Size(803, 482);
             this.panelCreateTeam.TabIndex = 37;
             this.panelCreateTeam.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCreateTeam_Paint);
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Names";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "id";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Names";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "id";
-            this.Column3.Name = "Column3";
-            this.Column3.Visible = false;
             // 
             // ManagerForm
             // 
