@@ -19,14 +19,9 @@ namespace BugTracker.Business_Layer
 
         }
 
-        public bool createTeam(Team t)
+        public int createTeam(Team t)
         {
             return tD.createTeam(t);
-        }
-
-        public DataTable getTeamMembers(int teamID)
-        {
-            return tD.getTeamMembers(teamID);
         }
     }
 }

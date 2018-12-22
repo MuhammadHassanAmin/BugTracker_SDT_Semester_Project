@@ -131,7 +131,24 @@ namespace BugTracker.Presentation_Layer
 
         private void createProjectbtn_Click(object sender, EventArgs e)
         {
-
+            if (DGVSelectedMemebers.Rows.Count > 0)
+            {
+                TeamBusiness bTeam = new TeamBusiness();
+                Team pTeam = new Team();
+                pTeam.name = txtTeamName.Text;
+                pTeam.category = cmbTeamType.Text;
+                pTeam.id =   bTeam.createTeam(pTeam);
+                foreach (DataGridViewRow member in DGVSelectedMemebers.Rows)
+                {
+                    int uid = Convert.ToInt32(member.Cells[1].Value.ToString());
+                    bTeam.addMemberToTeam(pTeam.id, uid);
+                }
+                MessageBox.Show("Team Created");
+            }
+            else
+            {
+                MessageBox.Show("No Member Selected");
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -224,7 +241,6 @@ namespace BugTracker.Presentation_Layer
               int n=   DGVSelectedMemebers.Rows.Add();
                 DGVSelectedMemebers.Rows[n].Cells[0].Value = name;
                 DGVSelectedMemebers.Rows[n].Cells[1].Value = userId;
-
             }
         }
 

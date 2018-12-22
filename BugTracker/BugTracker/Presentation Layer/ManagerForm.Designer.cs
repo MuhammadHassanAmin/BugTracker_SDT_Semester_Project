@@ -83,9 +83,9 @@
             this.selectRoleCB = new System.Windows.Forms.ComboBox();
             this.selectUserCB = new System.Windows.Forms.ComboBox();
             this.lblAssignRoles = new System.Windows.Forms.Label();
-            this.teamTypeCB = new System.Windows.Forms.ComboBox();
+            this.cmbTeamType = new System.Windows.Forms.ComboBox();
             this.createProjectbtn = new System.Windows.Forms.Button();
-            this.boxTeamName = new System.Windows.Forms.TextBox();
+            this.txtTeamName = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -180,7 +180,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label49.Location = new System.Drawing.Point(442, 177);
+            this.label49.Location = new System.Drawing.Point(471, 173);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(149, 20);
             this.label49.TabIndex = 11;
@@ -428,13 +428,16 @@
             // 
             // DGVSelectedMemebers
             // 
+            this.DGVSelectedMemebers.AllowUserToAddRows = false;
+            this.DGVSelectedMemebers.AllowUserToDeleteRows = false;
             this.DGVSelectedMemebers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVSelectedMemebers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.Column3});
             this.DGVSelectedMemebers.Location = new System.Drawing.Point(443, 198);
             this.DGVSelectedMemebers.Name = "DGVSelectedMemebers";
-            this.DGVSelectedMemebers.Size = new System.Drawing.Size(148, 169);
+            this.DGVSelectedMemebers.ReadOnly = true;
+            this.DGVSelectedMemebers.Size = new System.Drawing.Size(216, 169);
             this.DGVSelectedMemebers.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -683,16 +686,16 @@
             this.lblAssignRoles.TabIndex = 0;
             this.lblAssignRoles.Text = "Assign Roles";
             // 
-            // teamTypeCB
+            // cmbTeamType
             // 
-            this.teamTypeCB.FormattingEnabled = true;
-            this.teamTypeCB.Items.AddRange(new object[] {
+            this.cmbTeamType.FormattingEnabled = true;
+            this.cmbTeamType.Items.AddRange(new object[] {
             "Development Team",
             "Testing Team"});
-            this.teamTypeCB.Location = new System.Drawing.Point(353, 134);
-            this.teamTypeCB.Name = "teamTypeCB";
-            this.teamTypeCB.Size = new System.Drawing.Size(160, 21);
-            this.teamTypeCB.TabIndex = 7;
+            this.cmbTeamType.Location = new System.Drawing.Point(353, 134);
+            this.cmbTeamType.Name = "cmbTeamType";
+            this.cmbTeamType.Size = new System.Drawing.Size(160, 21);
+            this.cmbTeamType.TabIndex = 7;
             // 
             // createProjectbtn
             // 
@@ -705,12 +708,12 @@
             this.createProjectbtn.UseVisualStyleBackColor = true;
             this.createProjectbtn.Click += new System.EventHandler(this.createProjectbtn_Click);
             // 
-            // boxTeamName
+            // txtTeamName
             // 
-            this.boxTeamName.Location = new System.Drawing.Point(353, 94);
-            this.boxTeamName.Name = "boxTeamName";
-            this.boxTeamName.Size = new System.Drawing.Size(160, 20);
-            this.boxTeamName.TabIndex = 4;
+            this.txtTeamName.Location = new System.Drawing.Point(353, 94);
+            this.txtTeamName.Name = "txtTeamName";
+            this.txtTeamName.Size = new System.Drawing.Size(160, 20);
+            this.txtTeamName.TabIndex = 4;
             // 
             // label46
             // 
@@ -749,9 +752,9 @@
             this.panelCreateTeam.Controls.Add(this.label49);
             this.panelCreateTeam.Controls.Add(this.label44);
             this.panelCreateTeam.Controls.Add(this.DGVSelectedMemebers);
-            this.panelCreateTeam.Controls.Add(this.teamTypeCB);
+            this.panelCreateTeam.Controls.Add(this.cmbTeamType);
             this.panelCreateTeam.Controls.Add(this.createProjectbtn);
-            this.panelCreateTeam.Controls.Add(this.boxTeamName);
+            this.panelCreateTeam.Controls.Add(this.txtTeamName);
             this.panelCreateTeam.Controls.Add(this.label46);
             this.panelCreateTeam.Controls.Add(this.label47);
             this.panelCreateTeam.Controls.Add(this.label48);
@@ -876,9 +879,9 @@
         private System.Windows.Forms.ComboBox selectRoleCB;
         private System.Windows.Forms.ComboBox selectUserCB;
         private System.Windows.Forms.Label lblAssignRoles;
-        private System.Windows.Forms.ComboBox teamTypeCB;
+        private System.Windows.Forms.ComboBox cmbTeamType;
         private System.Windows.Forms.Button createProjectbtn;
-        private System.Windows.Forms.TextBox boxTeamName;
+        private System.Windows.Forms.TextBox txtTeamName;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
