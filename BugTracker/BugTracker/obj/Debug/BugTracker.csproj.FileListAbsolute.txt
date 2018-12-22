@@ -1,0 +1,34 @@
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\bin\Debug\BugTracker.exe.config
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\bin\Debug\BugTracker.exe
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\bin\Debug\BugTracker.pdb
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\obj\Debug\BugTracker.Properties.Resources.resources
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\obj\Debug\BugTracker.csproj.GenerateResource.Cache
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\obj\Debug\BugTracker.exe
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\obj\Debug\BugTracker.pdb
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.LoginForm.resources
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.ManagerDashboardUC.resources
+C:\Users\ddz\Documents\Visual Studio 2012\Projects\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.ManagerForm.resources
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\bin\Debug\BugTracker.exe.config
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.exe
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.pdb
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.csprojResolveAssemblyReference.cache
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.DeveloperForm.resources
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.LoginForm.resources
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.ManagerForm.resources
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.TesterForm.resources
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.Properties.Resources.resources
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\obj\Debug\BugTracker.csproj.GenerateResource.Cache
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\bin\Debug\BugTracker.exe
+E:\projects\bugtrackerrepo\BugTracker\BugTracker\bin\Debug\BugTracker.pdb
+D:\repo\BugTracker\BugTracker\bin\Debug\BugTracker.exe.config
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.exe
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.pdb
+D:\repo\BugTracker\BugTracker\bin\Debug\BugTracker.exe
+D:\repo\BugTracker\BugTracker\bin\Debug\BugTracker.pdb
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.csprojResolveAssemblyReference.cache
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.DeveloperForm.resources
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.LoginForm.resources
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.ManagerForm.resources
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.TesterForm.resources
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Properties.Resources.resources
+D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.csproj.GenerateResource.Cache
