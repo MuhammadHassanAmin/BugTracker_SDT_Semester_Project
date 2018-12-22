@@ -37,18 +37,19 @@ namespace BugTracker.Presentation_Layer
             int count = bugB.getCurrentBugsCount();
             int i = 1;
 
-            b = bugB.getBug(count);
+            b = bugB.getBug(i);
 
             StringBuilder sb1 = new StringBuilder();
             while (i <= count)
             {
                 if (b.id != 999)
                 {
+                    sb1.AppendLine("---");
                     sb1.AppendLine(b.title.Trim() + " marked as " + b.priority.Trim());
                     sb1.AppendLine(b.title.Trim() + " status changed to " + b.status.Trim());
                 }
                 i++;
-                b = bugB.getBug(count);
+                b = bugB.getBug(i);
             }
             bugsFeed.Text = sb1.ToString();
 
@@ -225,6 +226,29 @@ namespace BugTracker.Presentation_Layer
                 DGVSelectedMemebers.Rows[n].Cells[1].Value = userId;
 
             }
+        }
+
+        private void btnSelectTeam_Click(object sender, EventArgs e)
+        {
+            TeamBusiness tB = new TeamBusiness();
+            DataTable dt = new DataTable();
+
+            int teamID = comboBox4.SelectedIndex;
+            teamID = teamID + 1;
+
+            dt = tB.getTeamMembers(teamID);
+            foreach (DataRow item in dt.Rows)
+            {
+                int n = dataGridView4.Rows.Add();
+                dataGridView4.Rows[n].Cells["Column1"].Value = item["name"].ToString();
+                dataGridView4.Rows[n].Cells["Column2"].Value = item["id"].ToString();
+            }
+            dataGridView4.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

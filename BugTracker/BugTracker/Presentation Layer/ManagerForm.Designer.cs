@@ -46,12 +46,10 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.button7 = new System.Windows.Forms.Button();
             this.label52 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button6 = new System.Windows.Forms.Button();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
@@ -92,6 +90,9 @@
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.panelCreateTeam = new System.Windows.Forms.Panel();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSelectTeam = new System.Windows.Forms.Button();
             this.panel9.SuspendLayout();
             this.panelCreateProject.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -114,10 +115,10 @@
             this.panel9.Controls.Add(this.btnDashboard);
             this.panel9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel9.ForeColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(0, 9);
+            this.panel9.Location = new System.Drawing.Point(0, -5);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(137, 529);
+            this.panel9.Size = new System.Drawing.Size(137, 531);
             this.panel9.TabIndex = 23;
             // 
             // activePanel
@@ -214,9 +215,9 @@
             this.panelCreateProject.Controls.Add(this.label42);
             this.panelCreateProject.Controls.Add(this.label41);
             this.panelCreateProject.Controls.Add(this.label43);
-            this.panelCreateProject.Location = new System.Drawing.Point(135, 56);
+            this.panelCreateProject.Location = new System.Drawing.Point(138, 39);
             this.panelCreateProject.Name = "panelCreateProject";
-            this.panelCreateProject.Size = new System.Drawing.Size(773, 482);
+            this.panelCreateProject.Size = new System.Drawing.Size(798, 481);
             this.panelCreateProject.TabIndex = 36;
             // 
             // cmbCategory
@@ -301,15 +302,10 @@
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3});
-            this.dataGridView4.Location = new System.Drawing.Point(218, 183);
+            this.dataGridView4.Location = new System.Drawing.Point(138, 183);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(148, 169);
+            this.dataGridView4.Size = new System.Drawing.Size(228, 169);
             this.dataGridView4.TabIndex = 8;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Names";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // comboBox4
             // 
@@ -350,13 +346,8 @@
             this.dataGridViewTextBoxColumn2});
             this.dataGridView3.Location = new System.Drawing.Point(443, 183);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(148, 169);
+            this.dataGridView3.Size = new System.Drawing.Size(253, 169);
             this.dataGridView3.TabIndex = 9;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Names";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // button6
             // 
@@ -367,6 +358,7 @@
             this.button6.TabIndex = 12;
             this.button6.Text = ">";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label50
             // 
@@ -419,6 +411,7 @@
             // 
             // panelEditTeam
             // 
+            this.panelEditTeam.Controls.Add(this.btnSelectTeam);
             this.panelEditTeam.Controls.Add(this.label5);
             this.panelEditTeam.Controls.Add(this.button6);
             this.panelEditTeam.Controls.Add(this.label50);
@@ -428,9 +421,9 @@
             this.panelEditTeam.Controls.Add(this.comboBox4);
             this.panelEditTeam.Controls.Add(this.button7);
             this.panelEditTeam.Controls.Add(this.label52);
-            this.panelEditTeam.Location = new System.Drawing.Point(140, 44);
+            this.panelEditTeam.Location = new System.Drawing.Point(135, 39);
             this.panelEditTeam.Name = "panelEditTeam";
-            this.panelEditTeam.Size = new System.Drawing.Size(806, 482);
+            this.panelEditTeam.Size = new System.Drawing.Size(801, 478);
             this.panelEditTeam.TabIndex = 38;
             // 
             // DGVSelectedMemebers
@@ -464,9 +457,9 @@
             this.panel1.Controls.Add(this.btnCreateProjectOnManagerPanel);
             this.panel1.Controls.Add(this.btnAssignRole);
             this.panel1.Controls.Add(this.lblManagerDashboardMain);
-            this.panel1.Location = new System.Drawing.Point(135, -8);
+            this.panel1.Location = new System.Drawing.Point(135, -5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 58);
+            this.panel1.Size = new System.Drawing.Size(801, 46);
             this.panel1.TabIndex = 34;
             // 
             // btnFeed
@@ -538,9 +531,9 @@
             this.panelDashboardFeed.Controls.Add(this.label1);
             this.panelDashboardFeed.Controls.Add(this.panel2);
             this.panelDashboardFeed.Controls.Add(this.label7);
-            this.panelDashboardFeed.Location = new System.Drawing.Point(170, 47);
+            this.panelDashboardFeed.Location = new System.Drawing.Point(135, 39);
             this.panelDashboardFeed.Name = "panelDashboardFeed";
-            this.panelDashboardFeed.Size = new System.Drawing.Size(795, 485);
+            this.panelDashboardFeed.Size = new System.Drawing.Size(801, 478);
             this.panelDashboardFeed.TabIndex = 39;
             // 
             // developersFeed
@@ -550,7 +543,7 @@
             this.developersFeed.Location = new System.Drawing.Point(284, 49);
             this.developersFeed.Multiline = true;
             this.developersFeed.Name = "developersFeed";
-            this.developersFeed.Size = new System.Drawing.Size(417, 182);
+            this.developersFeed.Size = new System.Drawing.Size(470, 182);
             this.developersFeed.TabIndex = 53;
             // 
             // bugsFeed
@@ -598,7 +591,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(284, 257);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(540, 206);
+            this.panel2.Size = new System.Drawing.Size(470, 170);
             this.panel2.TabIndex = 31;
             // 
             // label4
@@ -628,9 +621,9 @@
             this.panelAssignRoles.Controls.Add(this.selectRoleCB);
             this.panelAssignRoles.Controls.Add(this.selectUserCB);
             this.panelAssignRoles.Controls.Add(this.lblAssignRoles);
-            this.panelAssignRoles.Location = new System.Drawing.Point(161, 50);
+            this.panelAssignRoles.Location = new System.Drawing.Point(135, 39);
             this.panelAssignRoles.Name = "panelAssignRoles";
-            this.panelAssignRoles.Size = new System.Drawing.Size(788, 476);
+            this.panelAssignRoles.Size = new System.Drawing.Size(808, 484);
             this.panelAssignRoles.TabIndex = 35;
             // 
             // label40
@@ -762,11 +755,33 @@
             this.panelCreateTeam.Controls.Add(this.label46);
             this.panelCreateTeam.Controls.Add(this.label47);
             this.panelCreateTeam.Controls.Add(this.label48);
-            this.panelCreateTeam.Location = new System.Drawing.Point(146, 53);
+            this.panelCreateTeam.Location = new System.Drawing.Point(138, 42);
             this.panelCreateTeam.Name = "panelCreateTeam";
-            this.panelCreateTeam.Size = new System.Drawing.Size(803, 482);
+            this.panelCreateTeam.Size = new System.Drawing.Size(798, 478);
             this.panelCreateTeam.TabIndex = 37;
             this.panelCreateTeam.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCreateTeam_Paint);
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Names";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Names";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // btnSelectTeam
+            // 
+            this.btnSelectTeam.Location = new System.Drawing.Point(531, 79);
+            this.btnSelectTeam.Name = "btnSelectTeam";
+            this.btnSelectTeam.Size = new System.Drawing.Size(106, 23);
+            this.btnSelectTeam.TabIndex = 14;
+            this.btnSelectTeam.Text = "Select";
+            this.btnSelectTeam.UseVisualStyleBackColor = true;
+            this.btnSelectTeam.Click += new System.EventHandler(this.btnSelectTeam_Click);
             // 
             // ManagerForm
             // 
@@ -774,13 +789,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 517);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelCreateTeam);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panelCreateProject);
             this.Controls.Add(this.panelEditTeam);
-            this.Controls.Add(this.panelDashboardFeed);
             this.Controls.Add(this.panelAssignRoles);
+            this.Controls.Add(this.panelCreateProject);
+            this.Controls.Add(this.panelCreateTeam);
+            this.Controls.Add(this.panelDashboardFeed);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ManagerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManagerForm";
             this.Load += new System.EventHandler(this.ManagerForm_Load);
             this.panel9.ResumeLayout(false);
@@ -826,12 +843,10 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
@@ -872,5 +887,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Button btnSelectTeam;
     }
 }
