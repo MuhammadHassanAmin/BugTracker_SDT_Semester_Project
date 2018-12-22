@@ -32,3 +32,15 @@ D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.ManagerFor
 D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.TesterForm.resources
 D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.Properties.Resources.resources
 D:\repo\BugTracker\BugTracker\obj\Debug\BugTracker.csproj.GenerateResource.Cache
+D:\newRepo\BugTracker\BugTracker\bin\Debug\BugTracker.exe.config
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.exe
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.pdb
+D:\newRepo\BugTracker\BugTracker\bin\Debug\BugTracker.exe
+D:\newRepo\BugTracker\BugTracker\bin\Debug\BugTracker.pdb
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.csprojResolveAssemblyReference.cache
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.DeveloperForm.resources
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.LoginForm.resources
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.ManagerForm.resources
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.Presentation_Layer.TesterForm.resources
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.Properties.Resources.resources
+D:\newRepo\BugTracker\BugTracker\obj\Debug\BugTracker.csproj.GenerateResource.Cache
