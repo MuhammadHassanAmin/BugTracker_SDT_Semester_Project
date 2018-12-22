@@ -17,7 +17,7 @@ namespace BugTracker.Data_Layer
 
         public DBConnection()
         {
-            con = new SqlConnection("Data Source=HASSAN;Initial Catalog=BugTracker;Integrated Security=True");
+            con = new SqlConnection("Data Source=DESKTOP-KAP2J5M;Initial Catalog=BugTracker;Integrated Security=True");
             con.Open();
         }
         public void SqlQuery(string query)

@@ -61,5 +61,16 @@ namespace BugTracker.Data_Layer
                 throw;
             }
         }
+
+
+        public DataTable getTeamMembers(int tID)
+        {
+            dbCon.SqlQuery("select * from users where id = (select userID_FK from user_team_junc where teamID_FK = tID)");
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(dbCon.cmd);
+            da.Fill(dt);
+            return dt;
+
+        }
     }
 }

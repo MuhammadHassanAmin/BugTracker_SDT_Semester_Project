@@ -51,6 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.mainPanel.SuspendLayout();
             this.panelSignup.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panelLogin.SuspendLayout();
@@ -60,16 +61,18 @@
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.Gainsboro;
-            this.mainPanel.Location = new System.Drawing.Point(53, 12);
+            this.mainPanel.Controls.Add(this.panelSignup);
+            this.mainPanel.Controls.Add(this.panelLogin);
+            this.mainPanel.Location = new System.Drawing.Point(1, -1);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(440, 482);
+            this.mainPanel.Size = new System.Drawing.Size(358, 482);
             this.mainPanel.TabIndex = 8;
             // 
             // panelSignup
             // 
             this.panelSignup.Controls.Add(this.panel8);
             this.panelSignup.Controls.Add(this.panel10);
-            this.panelSignup.Location = new System.Drawing.Point(98, 12);
+            this.panelSignup.Location = new System.Drawing.Point(8, 10);
             this.panelSignup.Margin = new System.Windows.Forms.Padding(0);
             this.panelSignup.Name = "panelSignup";
             this.panelSignup.Size = new System.Drawing.Size(338, 469);
@@ -190,10 +193,10 @@
             // 
             this.panelLogin.Controls.Add(this.panel5);
             this.panelLogin.Controls.Add(this.panel7);
-            this.panelLogin.Location = new System.Drawing.Point(98, 12);
+            this.panelLogin.Location = new System.Drawing.Point(8, 10);
             this.panelLogin.Margin = new System.Windows.Forms.Padding(0);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(338, 501);
+            this.panelLogin.Size = new System.Drawing.Size(338, 469);
             this.panelLogin.TabIndex = 10;
             // 
             // panel5
@@ -292,12 +295,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 506);
-            this.Controls.Add(this.panelLogin);
+            this.ClientSize = new System.Drawing.Size(359, 482);
             this.Controls.Add(this.mainPanel);
-            this.Controls.Add(this.panelSignup);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
+            this.mainPanel.ResumeLayout(false);
             this.panelSignup.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
