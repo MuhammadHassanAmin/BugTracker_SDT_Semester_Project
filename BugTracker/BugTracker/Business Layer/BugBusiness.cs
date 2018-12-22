@@ -11,7 +11,9 @@ namespace BugTracker.Business_Layer
     public class BugBusiness
     {
         BugData dBug = new BugData();
-       public BugBusiness() { }
+       public BugBusiness() {
+
+        }
         public bool createBug(Bug bBug)
         {
             return dBug.createBug(bBug);
